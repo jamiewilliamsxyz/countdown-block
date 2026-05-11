@@ -1,18 +1,26 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { TextControl, DateTime, PanelBody } from '@wordpress/components'
+import { TextControl, DateTimePicker, PanelBody } from '@wordpress/components'
 import './editor.scss';
 
 // Represents what the editor will render
 export default function Edit( { attributes, setAttributes } ) {
+	const { targetDate, expiryMessage } = attributes;
+
 	return (
 		<>
 			<InspectorControls>
 				<PanelBody title="Countdown Settings">
+					<DateTimePicker
+						currentDate={ targetDate }
+						onChange={ ( date ) => setAttributes( { targetDate: date } ) }
+						is12Hour={ true }
+					/>
+					<br />
 					<TextControl
 						label="Expiry message"
-						onChange={ ( expiryMessage ) => setAttributes( { expiryMessage: expiryMessage } ) }
-						value={ attributes.expiryMessage }
+						onChange={ ( msg ) => setAttributes( { expiryMessage: msg } ) }
+						value={ expiryMessage }
 					/>
 				</PanelBody>
 			</InspectorControls>
