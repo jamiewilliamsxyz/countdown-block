@@ -5,6 +5,6 @@ import metadata from './block.json';
 
 // Register new block type definition
 registerBlockType( metadata.name, {
-	
 	edit: Edit,
+	save: () => null
 } );
