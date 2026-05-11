@@ -1,0 +1,1 @@
+{"version":3,"file":"countdown-block/index.css","mappings":";;;AAEA;EACC;AADD,C","sources":["webpack://countdown-block/./src/countdown-block/editor.scss"],"sourcesContent":["// Additional styles for the editor styles\n\n.wp-block-create-block-countdown-block {\n\tborder: 1px dotted #f00;\n}"],"names":[],"sourceRoot":""}
