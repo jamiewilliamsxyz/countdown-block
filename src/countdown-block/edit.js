@@ -16,7 +16,9 @@ export default function Edit( { attributes, setAttributes } ) {
 						onChange={ ( date ) => setAttributes( { targetDate: date } ) }
 						is12Hour={ true }
 					/>
-					<br />
+				</PanelBody>
+
+				<PanelBody title="Expiry Settings">
 					<TextControl
 						label="Expiry message"
 						onChange={ ( msg ) => setAttributes( { expiryMessage: msg } ) }
