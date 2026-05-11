@@ -6,10 +6,9 @@ import './editor.scss';
 export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
-			{ __(
-				'Countdown Block - hello from the editor!',
-				'countdown-block'
-			) }
+			<span>00 { __( 'Days', 'countdown-block') }</span>
+			<span>00 { __( 'Hours', 'countdown-block') }</span>
+			<span>00 { __( 'Minutes', 'countdown-block') }</span>
 		</p>
 	);
 }
