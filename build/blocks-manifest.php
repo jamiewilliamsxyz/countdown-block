@@ -14,13 +14,34 @@ return array(
 			
 		),
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'color' => array(
+				'background' => true,
+				'text' => true
+			),
+			'typography' => array(
+				'fontSize' => true,
+				'textAlign' => true
+			),
+			'spacing' => array(
+				'padding' => true,
+				'margin' => true
+			)
 		),
 		'textdomain' => 'countdown-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php',
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'attributes' => array(
+			'targetDate' => array(
+				'type' => 'string'
+			),
+			'expiryMessage' => array(
+				'type' => 'string',
+				'default' => 'Expired'
+			)
+		)
 	)
 );
