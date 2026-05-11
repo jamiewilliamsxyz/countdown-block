@@ -2,4 +2,16 @@
 
 .wp-block-create-block-countdown-block {
 	border: 1px dotted #f00;
+
+	&.has-text-align-center {
+		justify-content: center;
+	}
+
+	&.has-text-align-right {
+		justify-content: flex-end;
+	}
+
+	&.has-text-align-left {
+		justify-content: flex-start;
+	}
 }

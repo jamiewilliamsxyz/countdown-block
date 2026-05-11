@@ -1,0 +1,1 @@
+{"version":3,"file":"countdown-block/style-index.css","mappings":";;;AAEA;EACC;EACA;AADD,C","sources":["webpack://countdown-block/./src/countdown-block/style.scss"],"sourcesContent":["// Styles for editor and site frontend\n\n.wp-block-create-block-countdown-block {\n\tdisplay: flex;\n\tgap: 0.75rem;\n}"],"names":[],"sourceRoot":""}
